@@ -46,6 +46,7 @@ export default async function Post({ params: { slug } }: Props) {
                      className="object-cover object-left lg:object-center"
                      src={urlFor(post.mainImage).url()}
                      alt={post.author.name}
+                     loading="eager"
                      fill
                   />
                </div>
@@ -72,6 +73,7 @@ export default async function Post({ params: { slug } }: Props) {
                            src={urlFor(post.author.image).url()}
                            height={40}
                            width={40}
+                           loading="eager"
                            alt="background image"
                         />
                         <div>
