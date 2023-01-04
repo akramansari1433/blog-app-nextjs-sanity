@@ -20,7 +20,7 @@ function BlogList({ posts }: Props) {
                   <div className="flex flex-col group cursor-pointer">
                      <div
                         className="w-full relative h-80 drop-shadow-xl 
-                    group-hover:scale-105 transition-transform duration-200 ease-out"
+                        group-hover:scale-105 transition-transform duration-200 ease-out"
                      >
                         <Image
                            className="object-cover object-left lg:object-center"
@@ -66,7 +66,7 @@ function BlogList({ posts }: Props) {
                            {post.description}
                         </p>
                      </div>
-                     <p className="mt-5 font-bold flex items-center group-hover:underline">
+                     <p className="mt-2 text-blue-700 font-bold flex items-center group-hover:underline group-hover:decoration-blue-700">
                         Read Post
                      </p>
                   </div>

@@ -39,7 +39,7 @@ export default async function Post({ params: { slug } }: Props) {
 
    return (
       <article className="px-10 pb-28">
-         <section className="space-y-2 border border-red-400 text-white">
+         <section className="space-y-2 border text-white">
             <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
                <div className="absolute top-0 w-full h-full opacity-10 p-10 blur-sm">
                   <Image
@@ -49,7 +49,7 @@ export default async function Post({ params: { slug } }: Props) {
                      fill
                   />
                </div>
-               <section className="p-5 w-full bg-red-500">
+               <section className="p-5 w-full bg-blue-700">
                   <div className="flex flex-col md:flex-row justify-between gap-y-5">
                      <div>
                         <h1 className="text-4xl font-extrabold">
@@ -68,13 +68,13 @@ export default async function Post({ params: { slug } }: Props) {
                      </div>
                      <div className="flex items-center space-x-2">
                         <Image
-                           className="rounded-full"
+                           className="border-2 rounded-full"
                            src={urlFor(post.author.image).url()}
                            height={40}
                            width={40}
                            alt="background image"
                         />
-                        <div className="w-64">
+                        <div>
                            <h3 className="text-lg font-bold">
                               {post.author.name}
                            </h3>
@@ -87,7 +87,7 @@ export default async function Post({ params: { slug } }: Props) {
                         {post.categories?.map((category) => (
                            <p
                               key={category._id}
-                              className="bg-gray-800 text-white rounded-full text-sm px-3 py-1 font-semibold mt-4"
+                              className="bg-red-500 text-white rounded-full text-sm px-3 py-1 font-semibold mt-4"
                            >
                               {category.title}
                            </p>

@@ -9,8 +9,8 @@ function Banner() {
                Welcome to developers blog in Devosphere
             </h2>
          </div>
-         <p className="mt-5 md:mt-2 text-gray-400 max-w-sm">
-            New product features | Daily blogs{" "}
+         <p className="mt-5 md:mt-2 text-gray-500 max-w-sm">
+            New product features | The Latest in Technology & More!
          </p>
       </div>
    );

@@ -7,13 +7,20 @@ function Header() {
          <div className="flex items-center space-x-2">
             <Link
                href="/"
-               className="flex items-center justify-center w-10 h-10 rounded-full bg-red-400"
+               className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-700 text-white"
             >
                <h1 className="text-3xl">A</h1>
             </Link>
             <h1>Blog App</h1>
          </div>
-         <div>{/* Somethinh here */}</div>
+         <div>
+            <Link
+               className="flex items-center justify-center rounded-full bg-black text-white px-3 py-1"
+               href="https://akramansari1433.github.io/portfolio/"
+            >
+               <p>View Portfolio</p>
+            </Link>
+         </div>
       </header>
    );
 }
