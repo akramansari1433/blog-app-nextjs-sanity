@@ -27,6 +27,7 @@ function BlogList({ posts }: Props) {
                            src={urlFor(post.mainImage).url()}
                            alt={post.author.name}
                            fill
+                           loading="eager"
                         />
                         <div
                            className="absolute bottom-0 w-full bg-opacity-20 bg-black 
